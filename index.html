@@ -4,29 +4,40 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Introduction-git by SUB-ESTADISTICA-ICFES</title>
-
     <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
-    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
     <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
   </head>
   <body>
-    <div class="wrapper">
+
       <header>
         <h1>Introduction-git</h1>
         <p>Este corto repositorio tiene las guías y los links introductorios a git</p>
-
-        <p class="view"><a href="https://github.com/SUB-ESTADISTICA-ICFES/Introduction-Git">View the Project on GitHub <small>SUB-ESTADISTICA-ICFES/Introduction-Git</small></a></p>
-
-
-        <ul>
-          <li><a href="https://github.com/SUB-ESTADISTICA-ICFES/Introduction-Git/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/SUB-ESTADISTICA-ICFES/Introduction-Git/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/SUB-ESTADISTICA-ICFES/Introduction-Git">View On <strong>GitHub</strong></a></li>
-        </ul>
       </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/SUB-ESTADISTICA-ICFES/Introduction-Git" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/SUB-ESTADISTICA-ICFES/Introduction-Git/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/SUB-ESTADISTICA-ICFES/Introduction-Git/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
       <section>
         <h1>
 <a id="introducción-git" class="anchor" href="#introducci%C3%B3n-git" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Introducción Git</h1>
@@ -112,10 +123,11 @@
 
 <ol>
 <li>Clonar repositorio de esta presentación <a href="https://github.com/SUB-ESTADISTICA-ICFES/Introduction-Git">https://github.com/SUB-ESTADISTICA-ICFES/Introduction-Git</a>.</li>
-<li>Dentro de la carpeta "Ejercicio_Individual", crear una carpeta con el siguiente formato "NOMBRE_APELLIDO" y agregar un archivo de preferencia (Script, Imagen, Pdf, etc..).</li>
-<li>Hacer el Commit de los cambios en el repositorio.</li>
-<li>Hacer un reporte de errores, a uno de los archivos de otro Usuario.</li>
-<li>Crear un Pull Request.</li>
+<li>Crear un nuevo branch con el siguiente formato "BRANCH_NOMBRE_APELLIDO".</li>
+<li>Dentro de la carpeta "Ejercicio_Individual", crear una carpeta con el siguiente formato "NOMBRE_APELLIDO" y agregar un archivo de su preferencia (Script, Imagen, Pdf, etc..).</li>
+<li>Hacer el Commit de los cambios en el repositorio, dentro del BRANCH Creado.</li>
+<li>Hacer un reporte de errores, a uno de los archivos agregados por otro Usuario.</li>
+<li>Crear un Pull Request, de los cambios echos en el Commit.</li>
 <li>Hacer Merge con el Branch Principal.</li>
 </ol>
 
@@ -152,13 +164,27 @@ tomado de <a href="http://yakiloo.com/getting-started-github/">http://yakiloo.co
 
 <h1>
 <a id="ejercicio-grupal" class="anchor" href="#ejercicio-grupal" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Ejercicio Grupal</h1>
+
+<ol>
+<li>Aceptar la invitación a la organización SUB-ESTADISTICA-ICFES.</li>
+<li>Dentro de la Wiki de uno de sus Repositorios (SABER 11, SABER PRO,.., etc), agregar y/o editar una pagina.</li>
+<li>Dentro de la carpeta "Ejercicio_Grupal", se encuentra un proyecto el cual contiene los datos 
+
+<ul>
+<li>SABER 11, Ajustar un modelo de regresión tomando como variable Petal.Width y covariable Petal.Length, incluir gráficos de ajuste <a href="https://rpubs.com/lwaldron/iris_regression">Vinculo</a>.</li>
+<li>SABER PRO, Hacer un análisis de Componentes principales e incluir gráficos para las primeras 4 componentes. <a href="https://rstudio-pubs-static.s3.amazonaws.com/71544_12b5b3168a17406c9d05eb911d7cad41.html">Vinculo</a>
+</li>
+<li>SABER 3, 5, 9, Entrenar una red neuronal, especifica con una capa oculta de 3 neuronas, como nodos de entrada <strong>Petal.Width, Petal.Length, Sepal.Width y Sepal.Length</strong> y como nodos de salida <strong>Species</strong>. <a href="https://rpubs.com/lwaldron/iris_regression">Vinculo</a>.</li>
+</ul>
+</li>
+</ol>
       </section>
       <footer>
-        <p>This project is maintained by <a href="https://github.com/SUB-ESTADISTICA-ICFES">SUB-ESTADISTICA-ICFES</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+        <p>Project maintained by <a href="https://github.com/SUB-ESTADISTICA-ICFES">SUB-ESTADISTICA-ICFES</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
       </footer>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     
   </body>
 </html>
