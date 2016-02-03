@@ -4,40 +4,29 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Introduction-git by SUB-ESTADISTICA-ICFES</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-dark.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/main.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
   <body>
-
+    <div class="wrapper">
       <header>
         <h1>Introduction-git</h1>
         <p>Este corto repositorio tiene las guías y los links introductorios a git</p>
+
+        <p class="view"><a href="https://github.com/SUB-ESTADISTICA-ICFES/Introduction-Git">View the Project on GitHub <small>SUB-ESTADISTICA-ICFES/Introduction-Git</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/SUB-ESTADISTICA-ICFES/Introduction-Git/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/SUB-ESTADISTICA-ICFES/Introduction-Git/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/SUB-ESTADISTICA-ICFES/Introduction-Git">View On <strong>GitHub</strong></a></li>
+        </ul>
       </header>
-
-      <div id="banner">
-        <span id="logo"></span>
-
-        <a href="https://github.com/SUB-ESTADISTICA-ICFES/Introduction-Git" class="button fork"><strong>View On GitHub</strong></a>
-        <div class="downloads">
-          <span>Downloads:</span>
-          <ul>
-            <li><a href="https://github.com/SUB-ESTADISTICA-ICFES/Introduction-Git/zipball/master" class="button">ZIP</a></li>
-            <li><a href="https://github.com/SUB-ESTADISTICA-ICFES/Introduction-Git/tarball/master" class="button">TAR</a></li>
-          </ul>
-        </div>
-      </div><!-- end banner -->
-
-    <div class="wrapper">
-      <nav>
-        <ul></ul>
-      </nav>
       <section>
         <h1>
 <a id="introducción-git" class="anchor" href="#introducci%C3%B3n-git" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Introducción Git</h1>
@@ -121,52 +110,24 @@
 <h1>
 <a id="ejercicio-individual" class="anchor" href="#ejercicio-individual" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Ejercicio Individual</h1>
 
-<h1>
-<a id="organización-directorios-subdirección" class="anchor" href="#organizaci%C3%B3n-directorios-subdirecci%C3%B3n" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Organización Directorios Subdirección</h1>
+<ol>
+<li>Clonar repositorio de esta presentación <a href="https://github.com/SUB-ESTADISTICA-ICFES/Introduction-Git">https://github.com/SUB-ESTADISTICA-ICFES/Introduction-Git</a>.</li>
+<li>Dentro de la carpeta "Ejercicio_Individual", crear una carpeta con el siguiente formato "NOMBRE_APELLIDO" y agregar un archivo de preferencia (Script, Imagen, Pdf, etc..).</li>
+<li>Hacer el Commit de los cambios en el repositorio.</li>
+<li>Hacer un reporte de errores, a uno de los archivos de otro Usuario.</li>
+<li>Crear un Pull Request.</li>
+<li>Hacer Merge con el Branch Principal.</li>
+</ol>
 
-<p>Con el ánimo de estandarizar el código y hacer mucha más fácil la re-utilización del mismo en diferentes proyectos que se ejecutan en la Subdirección de Estadística del ICFES, se recomienda a los usuarios de la subdirección seguir la siguiente estructura de carpetas, de acuerdo al tipo de proyecto en el que estén trabajando. Siguiendo esta estructura de almacenamiento será más sencillo hacer búsquedas por diferentes usuarios, además de facilitar la replicabilidad, auditoría y entendimiento del trabajo realizado (RAE).</p>
+<h1>
+<a id="organización-repositorios-subdirección" class="anchor" href="#organizaci%C3%B3n-repositorios-subdirecci%C3%B3n" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Organización Repositorios Subdirección.</h1>
+
+<p>Con el ánimo de estandarizar el código y hacer mucha más fácil la re-utilización del mismo en diferentes proyectos que se ejecutan en la Subdirección de Estadística del ICFES, se recomienda a los usuarios de la subdirección seguir la siguiente estructura de carpetas, de acuerdo al tipo de proyecto en el que estén trabajando. Siguiendo esta estructura de almacenamiento será más sencillo hacer búsquedas por diferentes usuarios, además de facilitar la replicabilidad, auditoría y entendimiento del trabajo realizado. La siguiente es la estructura de los repositorios para la subdirección de estadística:</p>
 
 <p><img src="https://github.com/SUB-ESTADISTICA-ICFES/Introduction-Git/blob/gh-pages/images/Carpetas_repositorio.png?raw=true" alt=""></p>
 
-<h2>
-<a id="proyectos" class="anchor" href="#proyectos" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Proyectos</h2>
-
-<p><img src="https://bitbucket.org/repo/KKnzya/images/2495745652-G1_PROJECT.png" alt="G1_PROJECT.png"></p>
-
-<p>Es la estructura general de cualquier tipo proyecto o análisis desarrollado por los integrantes de la subdirección:</p>
-
-<ul>
-<li>
-<strong>Doc:</strong> Todo tipo de documentación sobre el proyecto o sobre el proceso general de esa tarea. También debe estar incluidos los reporte de resultados de los proyectos (Ejemplo análisis de ítems).</li>
-<li>
-<strong>Input:</strong> Las referencias a conjuntos de datos utilizados , es decir , enlaces y descripción general</li>
-<li>
-<strong>Output:</strong> Los resultados experimentales, los archivos con tablas , figuras, etc, datos temporales.</li>
-<li>
-<strong>Src:</strong> El código fuente separados por lenguaje de programación.</li>
-<li>
-<strong>Sweave:</strong> Se deben organizar los códigos que se utilizan en la maquetación de reportes, ya sea con la herramienta Sweave de R o con código escrito en Markdown (ver <a href="https://en.wikipedia.org/wiki/Markdown">Leguaje de marcadores</a>).</li>
-<li>
-<strong>Perl:</strong> Como ya se había mencionada el código fuente debe estar separado por lenguaje de programación, en este ejemplo el proyecto utiliza códigos programados en Perl, es por esto que se debe incluir una nueva carpeta.</li>
-</ul>
-
-<h2>
-<a id="artículos" class="anchor" href="#art%C3%ADculos" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Artículos</h2>
-
-<p><img src="https://bitbucket.org/repo/KKnzya/images/2099017713-G1_PAPERS.png" alt="G1_PAPERS.png"></p>
-
-<p>En la sección Documentos debe almacenar la producción los artículos de la Subdirección en el código fuente (.tex) y la versión en .pdf.</p>
-
-<ul>
-<li>
-<strong>Imágenes:</strong> Cada imagen que se utiliza en el documento debería estar allí.</li>
-<li>
-<strong>Scripts:</strong> Scripts y plantillas utilizadas para fabricar el articulo.</li>
-<li>
-<strong>Los datos:</strong> Datos adicionales o aquellos que se quieran compartir en el repositorio, son los resultados del articulo.</li>
-</ul>
-
-<p><a href="https://github.com/SUB-ESTADISTICA-ICFES">Repositorios GitHub</a></p>
+<p><a href="https://github.com/SUB-ESTADISTICA-ICFES">Repositorios GitHub</a>
+<a href="https://github.com/SUB-ESTADISTICA-ICFES/SABER-11/wiki">Wiki GitHub</a></p>
 
 <h2>
 <a id="equipos-de-trabajo" class="anchor" href="#equipos-de-trabajo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Equipos de Trabajo</h2>
@@ -193,11 +154,11 @@ tomado de <a href="http://yakiloo.com/getting-started-github/">http://yakiloo.co
 <a id="ejercicio-grupal" class="anchor" href="#ejercicio-grupal" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Ejercicio Grupal</h1>
       </section>
       <footer>
-        <p>Project maintained by <a href="https://github.com/SUB-ESTADISTICA-ICFES">SUB-ESTADISTICA-ICFES</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+        <p>This project is maintained by <a href="https://github.com/SUB-ESTADISTICA-ICFES">SUB-ESTADISTICA-ICFES</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    <script src="javascripts/scale.fix.js"></script>
     
   </body>
 </html>
