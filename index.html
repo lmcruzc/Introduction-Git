@@ -45,24 +45,68 @@
 <h1>
 <a id="introducción-github" class="anchor" href="#introducci%C3%B3n-github" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Introducción GitHub</h1>
 
+<p><a href="https://www.youtube.com/watch?v=vq2jYFZVMDA"><img src="http://img.youtube.com/vi/vq2jYFZVMDA/0.jpg" alt="GitHub for Windows"></a>
+<a href="https://github.com/hadley/ggplot2/issues">Ejemplo ggplot2</a></p>
+
 <h2>
 <a id="creación-de-repositorios" class="anchor" href="#creaci%C3%B3n-de-repositorios" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Creación de repositorios</h2>
+
+<p>Un repositorio es la unidad básica de GitHub, más comúnmente es un proyecto. Los repositorios pueden contener carpetas y archivos, incluyendo imágenes o cualquier tipo de información o documento que requiera.</p>
+
+<p>** Para crear un nuevo repositorio **</p>
+
+<ol>
+<li>Hacer Clic the  icon next to your username, top-right.</li>
+<li>Escribir el nombre de su nuevo repositorio.</li>
+<li>Escribir una corta descripción</li>
+<li>(Recomendable) Seleccionar Initialize this repository with a README, esta opción construye un archivo con la descripción general del repositorio.</li>
+</ol>
 
 <p><img src="https://guides.github.com/activities/hello-world/create-new-repo.png" alt=""></p>
 
 <h2>
 <a id="reporte-de-errores" class="anchor" href="#reporte-de-errores" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Reporte de Errores</h2>
 
+<p>Un problema (Issue) es una nota en un repositorio de algo que necesita atención. Podría ser un error, una solicitud de funcionalidad, una pregunta, entre otras cosas. </p>
+
+<p><strong>Abrir un problema</strong></p>
+
+<ol>
+<li>Haga clic en la pestaña de Problemas en la barra lateral.</li>
+<li>Dar Clic en Nuevo Problema (<em>New Issue</em>).</li>
+<li>Escribir el problema, un titulo y la descripción.</li>
+</ol>
+
 <p><img src="https://guides.github.com/activities/hello-world/issue.png" alt=""></p>
 
 <h2>
 <a id="creación-de-branch" class="anchor" href="#creaci%C3%B3n-de-branch" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Creación de Branch</h2>
 
-<p><img src="https://guides.github.com/activities/hello-world/branching.png" alt="">
-<img src="https://guides.github.com/activities/hello-world/readme-edits.gif" alt=""></p>
+<p>Cuando se crea una rama, se está realizando una copia independiente de la rama original, como estaba en un determinado punto del tiempo (ver siguiente figura). Si existen cambios en la rama principal mientras se esta trabajando en una nueva rama, no se preocupe, siempre se puede revertir o integrar esos cambios.
+<img src="https://guides.github.com/activities/hello-world/branching.png" alt=""></p>
+
+<p>** Para crear una nueva rama (Branch) **</p>
+
+<ol>
+<li>Abrir el repositorio en donde creara la nueva rama.</li>
+<li>Hacer clic en el menú desplegable en la parte superior de la lista de archivos que dice <strong>branch : master</strong>.</li>
+<li>Escriba un nombre de la nueva rama , <strong>readme-edits</strong>, en el cuadro de texto.</li>
+<li>Seleccione la opción crear una rama ... o pulsar "Enter" en su teclado.</li>
+</ol>
+
+<p><img src="https://guides.github.com/activities/hello-world/readme-edits.gif" alt=""></p>
 
 <h2>
 <a id="hacer-commit" class="anchor" href="#hacer-commit" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Hacer Commit</h2>
+
+<p>** Ejemplo hacer Commit**</p>
+
+<ol>
+<li>Hacer clic en el archivo README.</li>
+<li>Hacer clic en el icono del lápiz en la esquina superior derecha de la vista de archivos para editar.</li>
+<li>En el editor, escribir un texto de su preferencia.</li>
+<li>Escribe un mensaje en el formulario que describe los cambios a confirmar.</li>
+</ol>
 
 <p><img src="https://guides.github.com/activities/hello-world/commit.png" alt=""></p>
 
@@ -78,16 +122,16 @@
 </thead>
 <tbody>
 <tr>
-<td> Dar clic en icono para Pull Request ubicado en la barra lateral de la pagina, luego en la pagina de Pull request, hacer clic sobre el botón verde <strong>New pull request</strong>. </td>
+<td> Dar clic en el icono  (Pull Request) ubicado en la barra lateral de la pagina, luego en la pagina de Pull request, hacer clic sobre el botón verde <strong> New pull request</strong>. </td>
 <td> <img src="https://cloud.githubusercontent.com/assets/1305617/2543808/73059f0a-b5f7-11e3-928e-745e9f9a5c75.gif" alt="create pr"> </td>
 </tr>
 <tr>
-<td> Seleccionar la rama (brach) que Ud hizo, <code>readme-edits</code>, para comparar con el branch <code>master</code> (el  original). </td>
+<td> Seleccionar la rama (brach) que quiere integrar, <code>readme-edits</code>, para comparar con el rama <code>master</code> (la rama original). </td>
 <td> <img src="https://guides.github.com/activities/hello-world/pick-branch.png" alt="branch">
 </td>
 </tr>
 <tr>
-<td> Verificar todos los cambios el pagina de comparaciones, debe tener la certeza que los cambios corresponden a lo que se quiere subir en al repositorio. </td>
+<td> Verificar todos los cambios en la pagina de comparaciones, debe tener la certeza que los cambios corresponden a lo que se quiere subir en al repositorio. </td>
 <td> <img src="https://guides.github.com/activities/hello-world/diff.png" alt="diff">
 </td>
 </tr>
@@ -97,9 +141,7 @@
 </td>
 </tr>
 <tr>
-<td> Al cambio se le define un titulo, y si este corresponde a un problema o error abierto, se debe incluir en el titulo "fixes #" y el número de incidencia. También es aconsejable escribir una breve descripción de los cambios.
-
-title and since it relates directly to an open issue, include “fixes #” and the issue number in the title. Write a brief description of your changes. </td>
+<td> Se define un titulo, y si este corresponde a un problema o a un error abierto, se debe incluir en el titulo "fixes #" y el número de incidencia. También es aconsejable escribir una breve descripción de los cambios.</td>
 <td> <img src="https://guides.github.com/activities/hello-world/pr-form.png" alt="pr-form">
 </td>
 </tr>
