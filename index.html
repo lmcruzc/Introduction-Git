@@ -39,16 +39,55 @@
         <ul></ul>
       </nav>
       <section>
-        <h1>
+        <p>Esta corta presentación tiene el objetivo de introducir Git, como también hacer una breve introducción al uso de GitHub por medio de las herramientas disponibles y el servicio web de gitHub.</p>
+
+<h1>
 <a id="introducción-git" class="anchor" href="#introducci%C3%B3n-git" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Introducción Git</h1>
 
 <p>Tomado de: <a href="https://git-scm.com/book/es/v1">https://git-scm.com/book/es/v1</a></p>
 
-<p>¿Qué es el control de versiones, y por qué debería importarte? El control de versiones es un sistema que registra los cambios realizados sobre un archivo o conjunto de archivos a lo largo del tiempo, de modo que puedas recuperar versiones específicas más adelante.</p>
+<p>¿Qué es el control de versiones, y por qué es importarte?, El control de versiones es un sistema que registra los cambios realizados sobre un archivo o conjunto de archivos a lo largo del tiempo, de modo que puedas recuperar versiones específicas más adelante.</p>
 
-<p><img src="https://git-scm.com/figures/18333fig0101-tn.png" alt="img1">
-<img src="https://git-scm.com/figures/18333fig0102-tn.png" alt="img2">
-<img src="https://git-scm.com/figures/18333fig0103-tn.png" alt="img3"></p>
+<h2>
+<a id="sistema-de-control-de-versiones-locales" class="anchor" href="#sistema-de-control-de-versiones-locales" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Sistema de control de versiones Locales</h2>
+
+<p><img src="https://git-scm.com/figures/18333fig0101-tn.png" alt="img1"></p>
+
+<ul>
+<li>Un método de control de versiones usado por mucha gente es copiar los archivos a otro directorio (quizás indicando la fecha y hora en que lo hicieron, si son avispados). </li>
+<li><strong>Es fácil olvidar en qué directorio te encuentras, y guardar accidentalmente en el archivo equivocado o sobrescribir archivos que no querías.</strong></li>
+<li>Se desarrollaron soluciones usando simples base de datos en la que se llevaba registro de todos los cambios realizados sobre los archivos </li>
+<li>Con estas herramientas se pueden recrear cómo era un archivo en cualquier momento.</li>
+</ul>
+
+<h2>
+<a id="sistemas-de-control-de-versiones-centralizados" class="anchor" href="#sistemas-de-control-de-versiones-centralizados" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Sistemas de control de versiones centralizados</h2>
+
+<p><img src="https://git-scm.com/figures/18333fig0102-tn.png" alt="img2"></p>
+
+<ul>
+<li>Este tipo de sistemas surgió bajo la necesidad de colaborar con desarrolladores en otros sistemas, (Centralized Version Control Systems o CVCSs en inglés)</li>
+<li>Tienen un único servidor que contiene todos los archivos versionados, y varios clientes que descargan los archivos desde ese lugar central.</li>
+<li>Durante muchos años éste ha sido el estándar para el control de versiones (Siglo XX).</li>
+<li>(Ventaja) Todo el mundo puede saber (hasta cierto punto) en qué están trabajando los otros colaboradores del proyecto. </li>
+<li>(Ventaja) Los administradores tienen control detallado de qué puede hacer cada uno; y es mucho más fácil administrar un CVCS que tener que lidiar con bases de datos locales.</li>
+<li>(Desventaja) La desventaja La más obvia es el punto único de fallo que representa el servidor centralizado.</li>
+<li>(Desventaja) Cuando tienes toda la historia del proyecto en un único lugar, te arriesgas a perderlo todo.</li>
+</ul>
+
+<h2>
+<a id="sistemas-de-control-de-versiones-distribuidos" class="anchor" href="#sistemas-de-control-de-versiones-distribuidos" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Sistemas de control de versiones distribuidos</h2>
+
+<p><img src="https://git-scm.com/figures/18333fig0103-tn.png" alt="img3"></p>
+
+<ul>
+<li>Como solución a los sistemas centralizados se crean (Distributed Version Control Systems o DVCSs en inglés). En un DVCS (como Git, Mercurial, Bazaar o Darcs)</li>
+<li>Permite establecer varios flujos de trabajo que no son posibles en sistemas centralizados, como pueden ser los modelos jerárquicos.</li>
+<li>Puedes colaborar con distintos grupos de gente simultáneamente dentro del mismo proyecto.</li>
+<li>Cada vez que se descarga una instantánea, en realidad se hace una copia de seguridad completa de todos los datos.
+<a href="https://youtu.be/_yQlKEq-Ueg"><img src="http://img.youtube.com/vi/_yQlKEq-Ueg/0.jpg" alt="GitHub for Windows"></a>
+</li>
+</ul>
 
 <h1>
 <a id="introducción-github" class="anchor" href="#introducci%C3%B3n-github" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Introducción GitHub</h1>
